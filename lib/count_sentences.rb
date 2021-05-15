@@ -14,8 +14,8 @@ class String
     self.end_with("!") true : false
   end
 
-  # def count_sentences
-  #   self.split(/\.|\?|\!/).delete_if {|w| w.count < 2}.count
-  # end
-
+  def count_sentences
+    self.split(/\.|\?|\!/).delete_if {|w| w.count < 2}.count
+  end
+  
 end
