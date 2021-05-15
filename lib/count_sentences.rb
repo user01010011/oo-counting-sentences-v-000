@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    self.split(/\.|\?|\!/).delete_if {|w| w.count < 2}.count
+    self.split(/\.|\?|\!/).delete_if {|w| w.size < 2}.size
   end
 
 end
